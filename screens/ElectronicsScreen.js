@@ -20,8 +20,8 @@ export default function ElectronicsScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const categoriesResponse = await axios.get('https://671168cf4eca2acdb5f4c2fe.mockapi.io/categoriesOfElectronic');
-        const productsResponse = await axios.get('https://671168cf4eca2acdb5f4c2fe.mockapi.io/productsOfElectronics');
+        const categoriesResponse = await axios.get('https://6714b1cd690bf212c762226d.mockapi.io/GiaThuan');
+        const productsResponse = await axios.get('https://6714b1cd690bf212c762226d.mockapi.io/productsOfElectronics');
         setCategories(categoriesResponse.data);
         setProducts(productsResponse.data);
         setFilteredProducts(productsResponse.data);  // Set initial filteredProducts
@@ -47,7 +47,7 @@ export default function ElectronicsScreen() {
     <SafeAreaView style={styles.safeArea}>
     <View style={styles.container}>
     <Text style={styles.headerTitle}>Electronics</Text>
-      {/* <ScrollView style={{ width: "100%", height: 500 }}>
+      <ScrollView style={{ width: "100%", height: 500 }}>
 
         <View style={styles.header}>
           <TouchableOpacity 
@@ -62,7 +62,7 @@ export default function ElectronicsScreen() {
             <Ionicons name="cart-outline" size={30} color="#9095a0"/>
           </TouchableOpacity>
 
-          <Image source={require('../assets/img/ava1.png')} style={styles.profileImage}/>
+          <Image source={require('../assets/img/ava2.png')} style={styles.profileImage}/>
         </View>
 
         <View style={styles.searchContainer}>
@@ -161,9 +161,9 @@ export default function ElectronicsScreen() {
             passiveDotHeight={8} 
           />
         </View>
-      </ScrollView> */}
+      </ScrollView>
 
-      {/* <Footer/> */}
+      <Footer/>
     </View>
     </SafeAreaView>
   );
